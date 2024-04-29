@@ -75,6 +75,6 @@ if __name__ == "__main__":
     elif len(sys.argv) == 2:
         answer(sys.argv[1])
     elif len(sys.argv) == 3:
-        print(find_best_route(sys.argv[1], sys.argv[2]))
+        print(find_best_route(sys.argv[1].lower().capitalize(), sys.argv[2].lower().capitalize()))
     else:
         print('Invalid amount of parameters')
